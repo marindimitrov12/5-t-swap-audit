@@ -37,7 +37,7 @@ handler=new Handler(pool);
 bytes4[] memory selectors=new bytes4[](2);
 selectors[0]=Handler.deposit.selector;
 selectors[1]=handler.swapPoolTokenForWethBasedOnOutputWeth.selector;
-
+ 
 targetSelector(
     FuzzSelector({addr:address(handler),selectors:selectors})
 );
